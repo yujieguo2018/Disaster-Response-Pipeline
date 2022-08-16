@@ -7,20 +7,20 @@ The goal is to build ETL + NLP pipeline and machine learning model that classifi
 ### Folder Structure
 
 - app
-| - template
-| |- master.html  # main page of web app
-| |- go.html  # classification result page of web app
-|- run.py  # Flask file that runs app
+    -  template
+    - master.html  # main page of web app
+    - go.html  # classification result page of web app
+    - run.py  # Flask file that runs app
 
 - data
-|- disaster_categories.csv  # data to process 
-|- disaster_messages.csv  # data to process
-|- process_data.py
-|- DisasterResponse.db   # database to save clean data to
+    - disaster_categories.csv  # data to process 
+    - disaster_messages.csv  # data to process
+    - process_data.py
+    - DisasterResponse.db   # database to save clean data to
 
 - models
-|- train_classifier.py
-|- classifier.pkl  # saved model/too big to save on github but should be in local
+    - train_classifier.py
+    - classifier.pkl  # saved model/too big to save on github but should be in local
 
 - README.md
 
