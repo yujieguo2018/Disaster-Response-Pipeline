@@ -36,7 +36,8 @@ def clean_data(df):
         df[column] = df[column].map(lambda x:x[-1]).astype(str)
         # convert column from string to numeric
         df[column] = df[column].astype(int)
-
+        # convert values that great than 1 to be 1 to ensure the value is binary
+        df.loc[df[column]>1,column] = 1
     # drop duplicates
     df = df[-df.duplicated()]
 
